@@ -23,6 +23,10 @@ html,body {
   background-size: cover;
   background-position: center;
 
+  &-menu {
+    display: none;
+  }
+
   &-title {
     margin-top: 16px;
     width: 100%;
@@ -57,7 +61,6 @@ html,body {
   &-drawer {
     width: 100%;
 
-
     & .MuiDrawer-paper {
       width: 100%;
       background-color: $off-white;
@@ -83,10 +86,51 @@ html,body {
       align-items: center;
       padding-left: 0px;
     }
+
+    & a {
+      text-decoration: none;
+    }
     
     & li {
       font-size: 2.5rem;
       color: $slate
+    }
+  }
+}
+
+@media (min-width: 400px) and  (max-width: 500px) {
+  .HeroContainer {
+    &-quote {
+      width: 390px
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .HeroContainer {
+    &-buttonAndDrawer {
+      display: none
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &-menu {
+      display: flex;
+      padding-left: 32px;
+
+      & a {
+        text-decoration: none;
+      }
+
+      & p {
+        font-size: 32px;
+        margin-right: 16px;
+      }
     }
   }
 }
