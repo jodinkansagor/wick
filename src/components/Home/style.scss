@@ -14,7 +14,7 @@ html,body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-image: url('../../assets/image2.jpeg');
+  background-image: url('../../assets/image0.jpeg');
   background-size: cover;
   background-position: center;
 
@@ -53,6 +53,7 @@ html,body {
 
 @media (min-width: 960px) {
   .HeroContainer {
+    background-image: url('../../assets/image2.jpeg');
     &-title {
       display: flex;
       flex-direction: row-reverse;
