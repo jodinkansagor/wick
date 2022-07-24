@@ -11,15 +11,19 @@
         }
       }
     }
-
+  }
+  &-header {
+    font-weight: 900 !important;
   }
 }
 
 @media (min-width: 960px) {
   .Menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px 32px 32px;
     &-menuItems {
       display: flex;
-      padding-left: 32px;
 
       & a {
         text-decoration: none;

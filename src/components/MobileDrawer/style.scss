@@ -1,0 +1,62 @@
+@import "../../theme/colors.scss";
+
+.MobileDrawer {
+
+  &-buttonAndDrawer {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    & .MuiSvgIcon-root {
+      height: 40px;
+      width: 40px
+    }
+  }
+
+  &-drawer {
+    width: 100%;
+
+    & .MuiDrawer-paper {
+      width: 100%;
+      background-color: $newerWhite;
+    }
+
+    & .MuiSvgIcon-root {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  &-drawerContent {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      background-color: $newerWhite;
+
+    & ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0px;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+    
+    & li {
+      font-size: 2.5rem;
+      color: $darkestBrown
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .MobileDrawer {
+    &-buttonAndDrawer {
+      display: none
+    }
+  }
+}

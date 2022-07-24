@@ -6,22 +6,24 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Coaching from './components/Coaching';
 import Contact from './components/Contact';
+import { ContextProvider } from './components/context/ContextProvider';
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <Router>
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/coaching" element={<Coaching />} />
-            <Route path="/contact" element={<Contact />} />
-
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </Router>
-      </div>
-    </ThemeProvider>
+    <ContextProvider>
+      <ThemeProvider theme={theme}>
+        <div>
+          <Router>
+            <Routes>
+              <Route path="/about" element={<About />} />
+              <Route path="/coaching" element={<Coaching />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </Router>
+        </div>
+      </ThemeProvider>
+    </ContextProvider>
   )
 }
 

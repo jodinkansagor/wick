@@ -18,18 +18,6 @@ html,body {
   background-size: cover;
   background-position: center;
 
-  // & a {
-  //   & p {
-  //     &:active {
-  //       color: $terraCotta
-  //     }
-  //   }
-  // }
-
-  // &-menu {
-  //   display: none;
-  // }
-
   &-title {
     margin-top: 16px;
     width: 100%;
@@ -40,6 +28,10 @@ html,body {
     }
   }
 
+  &-header {
+    padding-right: 32px
+  }
+
   &-quote {
     margin-bottom: 32px;
     width: 100%;
@@ -47,56 +39,6 @@ html,body {
     
     & h4{
       padding-right: 8px;
-    }
-  }
-
-    &-buttonAndDrawer {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-
-      & .MuiSvgIcon-root {
-        height: 40px;
-        width: 40px
-      }
-    }
-
-  &-drawer {
-    width: 100%;
-
-    & .MuiDrawer-paper {
-      width: 100%;
-      background-color: $newerWhite;
-    }
-
-    & .MuiSvgIcon-root {
-      height: 40px;
-      width: 40px;
-    }
-  }
-  
-  &-drawerContent {
-    display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 40px;
-      background-color: $newerWhite;
-
-    & ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-left: 0px;
-    }
-
-    & a {
-      text-decoration: none;
-    }
-    
-    & li {
-      font-size: 2.5rem;
-      color: $darkestBrown
     }
   }
 }
@@ -111,29 +53,11 @@ html,body {
 
 @media (min-width: 960px) {
   .HeroContainer {
-    &-buttonAndDrawer {
-      display: none
-    }
-
     &-title {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: flex-start;
-    }
-
-    &-menu {
-      display: flex;
-      padding-left: 32px;
-
-      & a {
-        text-decoration: none;
-      }
-
-      & p {
-        font-size: 32px;
-        margin-right: 16px;
-      }
     }
   }
 }
