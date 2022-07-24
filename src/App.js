@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Coaching from './components/Coaching';
-import Contact from './components/Contact';
+import Coaching from './components/Coaching/Coaching';
+import Contact from './components/Contact/Contact';
 import { ContextProvider } from './components/context/ContextProvider';
 
 const App = () => {
