@@ -1,0 +1,11 @@
+@import "../../theme/colors.scss";
+
+.Footer {
+  &-content {
+    background-color: $camel;
+    color: $newerWhite;
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px;
+  }
+}

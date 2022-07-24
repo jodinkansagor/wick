@@ -1,0 +1,38 @@
+@import "../../theme/colors.scss";
+
+.Menu {
+  display: none;
+  &-menuItems {
+
+    & a {
+      & p {
+        &:active {
+          color: $terraCotta
+        }
+      }
+    }
+  }
+  &-header {
+    font-weight: 900 !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .Menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px 32px 32px;
+    &-menuItems {
+      display: flex;
+
+      & a {
+        text-decoration: none;
+      }
+
+      & p {
+        font-size: 32px;
+        margin-right: 16px;
+      }
+    }
+  }
+}
