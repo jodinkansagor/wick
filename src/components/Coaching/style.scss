@@ -1,3 +1,84 @@
+@import "../../theme/colors.scss";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: $newerWhite;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .Coaching {
   padding-top: 16px;
+  height: 100%;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+  }
+
+  &-header {
+    padding: 12px 12px 0px 12px;
+    font-weight: 900;
+    margin-top: 60px;
+  }
+
+  &-quote {
+    color: $darkestBrown;
+    text-align: center;
+    padding: 0 16px 16px 16px;
+  }
+
+  &-text {
+    background-color: $newerWhite;
+    padding: 0 16px 48px 16px;
+    text-align: center;
+    & p, h1, h3, h4 {
+      color: $darkestBrown
+    }
+
+    & p {
+      line-height: 1.25;
+      letter-spacing: .5px;
+    }
+  }
+
+  &-painting {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 960px) {
+  .Coaching {
+    &-header {
+      display: none
+    }
+
+    &-text {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      & p {
+        width: 600px;
+        font-size: 1.5rem;
+      }
+      & h3, h4 {
+        width: 600px
+      }
+    }  
+
+    &-quote {
+      width: 600px;
+    }
+    &-painting {
+      width: 600px;
+      // height: 100%;
+    }
+  }
 }
