@@ -2,8 +2,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from "./theme/theme"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Home from './components/Home';
-import About from './components/About';
+import Home from './components/Home/Home';
+import About from './components/About/About';
 import Coaching from './components/Coaching';
 import Contact from './components/Contact';
 

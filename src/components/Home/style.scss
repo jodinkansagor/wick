@@ -1,9 +1,4 @@
-$mint: #71cd9a;
-$orange: #e4540e;
-$slate: #3b3730;
-$lt-slate: #6e6d68;
-$off-white: #f2ebe1;
-$mid-brown: '#9C825E';
+@import "../../theme/colors.scss";
 
 html,body {
     width: 100%;
@@ -19,13 +14,21 @@ html,body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-image: url('../assets/image2.jpeg');
+  background-image: url('../../assets/image2.jpeg');
   background-size: cover;
   background-position: center;
 
-  &-menu {
-    display: none;
-  }
+  // & a {
+  //   & p {
+  //     &:active {
+  //       color: $terraCotta
+  //     }
+  //   }
+  // }
+
+  // &-menu {
+  //   display: none;
+  // }
 
   &-title {
     margin-top: 16px;
@@ -63,7 +66,7 @@ html,body {
 
     & .MuiDrawer-paper {
       width: 100%;
-      background-color: $off-white;
+      background-color: $newerWhite;
     }
 
     & .MuiSvgIcon-root {
@@ -77,7 +80,7 @@ html,body {
       flex-direction: column;
       align-items: center;
       padding-top: 40px;
-      background-color: $off-white;
+      background-color: $newerWhite;
 
     & ul {
       list-style: none;
@@ -93,7 +96,7 @@ html,body {
     
     & li {
       font-size: 2.5rem;
-      color: $slate
+      color: $darkestBrown
     }
   }
 }
