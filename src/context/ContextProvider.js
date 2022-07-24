@@ -16,7 +16,7 @@ const ContextProvider = ({ children }) => {
 
 
   return (
-    <WickContext.Provider value={openDrawer, toggleDrawer}>
+    <WickContext.Provider value={{ openDrawer, toggleDrawer }}>
       {children}
     </WickContext.Provider>
   )

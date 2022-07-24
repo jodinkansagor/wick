@@ -1,8 +1,8 @@
 @import "../../theme/colors.scss";
 
 .Menu {
+  display: none;
   &-menuItems {
-    display: none;
 
     & a {
       & p {

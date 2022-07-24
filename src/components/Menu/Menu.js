@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"
 import "./style.scss"
 
 const Menu = ({ dark, title }) => {
-  console.log(title)
   return (
     <div className="Menu">
       <div className="Menu-menuItems">

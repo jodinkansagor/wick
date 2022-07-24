@@ -43,8 +43,9 @@ html, body {
   }
 
   &-header {
-    padding-bottom: 12px;
+    padding: 12px 12px 0px 12px;
     font-weight: 900;
+    margin-top: 60px;
   }
 
   &-backLink {
@@ -62,6 +63,9 @@ html, body {
 
 @media (min-width: 960px) {
   .About {
+    &-header {
+      display: none
+    }
 
     &-text {
       display: flex;

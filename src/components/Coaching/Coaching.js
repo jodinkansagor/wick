@@ -9,6 +9,7 @@ const Coaching = () => {
     <div className="Coaching">
       <Menu dark title="Coaching Options" />
       <MobileDrawer dark/>
+      
     </div>
     )
 }

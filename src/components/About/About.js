@@ -11,9 +11,10 @@ const About = () => {
 
   return (
     <div className="About">
-      <Menu dark title="About Wick Lawson" />
+      <Menu dark  title="About Wick Lawson"/>
       <MobileDrawer dark/>
       <div className="About-content">
+        <h1 className="About-header">About Wick Lawson</h1>
         <img className="About-wickImage" src={wick2} alt="wick photo" />
         <div className='About-text'>
           <p>{data.bio1}</p>
