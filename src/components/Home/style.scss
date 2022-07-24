@@ -1,0 +1,63 @@
+@import "../../theme/colors.scss";
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.HeroContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-image: url('../../assets/image2.jpeg');
+  background-size: cover;
+  background-position: center;
+
+  &-title {
+    margin-top: 16px;
+    width: 100%;
+    text-align: right;
+
+    & h3 {
+      margin-right: 32px
+    }
+  }
+
+  &-header {
+    padding-right: 32px
+  }
+
+  &-quote {
+    margin-bottom: 32px;
+    width: 100%;
+    margin-left: 32px;
+    
+    & h4{
+      padding-right: 8px;
+    }
+  }
+}
+
+@media (min-width: 400px) and  (max-width: 500px) {
+  .HeroContainer {
+    &-quote {
+      width: 390px
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .HeroContainer {
+    &-title {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+}

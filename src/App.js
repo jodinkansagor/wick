@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from "./theme/theme"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-function App() {
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Coaching from './components/Coaching/Coaching';
+import Contact from './components/Contact/Contact';
+import { ContextProvider } from './context/ContextProvider';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ContextProvider>
+      <ThemeProvider theme={theme}>
+        <div>
+          <Router>
+            <Routes>
+              <Route path="/about" element={<About />} />
+              <Route path="/coaching" element={<Coaching />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </Router>
+        </div>
+      </ThemeProvider>
+    </ContextProvider>
+  )
 }
 
 export default App;
+
