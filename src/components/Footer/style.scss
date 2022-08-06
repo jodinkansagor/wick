@@ -1,6 +1,9 @@
 @import "../../theme/colors.scss";
 
 .Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   &-content {
     background-color: $camel;
     color: $newerWhite;

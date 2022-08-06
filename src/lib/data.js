@@ -15,6 +15,6 @@ export const data = {
   list3: "Identifying obstacles to reaching those goals",
   list4: "Language you feel most comfortable using",
   listFooter:
-    "My rates for coaching are $XXX for individuals and $XXX for couples for a 60-75min session. There are discounts for purchasing a package of sessions.",
+    "My rates for coaching are $XXX for individuals and $XXX for couples for a 60-75min session. Please inquite about discounts for purchasing a package of sessions.",
 
 }
