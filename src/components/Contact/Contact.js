@@ -68,7 +68,7 @@ const Contact = () => {
             </label>
 
             <div className='Contact-submit'>
-              <input className="Contact-input" className="Contact-submit-button" type="submit" name="submit inquiry" value="Submit" />
+              <input className="Contact-submit-button" type="submit" name="submit inquiry" value="Submit" />
             </div>
           </div>
 
