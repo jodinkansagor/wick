@@ -41,41 +41,44 @@ const Contact = () => {
 
   return (
     <div className="Contact">
-      <Menu dark title="Contact Wick" />
-      <MobileDrawer dark />
-      <form method="post" ref={formRef} onSubmit={handleSubmit} name="google-sheet" className="Contact-form">
-        <h1 className="Contact-header">Contact Wick</h1>
-        <div>
-          <label>
-            Name:
-            <input type="" name="name" id="name" onChange={(e) => setName(e.target.value)} value={name} /></label>
-          <label>Email:
-            <input className="Contact-input" type="email" name="email" placeholder='name@email.com' onChange={(e) => setEmail(e.target.value)} value={email} />
+      <div>
+        <Menu dark title="Contact Wick" />
+        <MobileDrawer dark />
+        <form method="post" ref={formRef} onSubmit={handleSubmit} name="google-sheet" className="Contact-form">
+          <h1 className="Contact-header">Contact Wick</h1>
+          <div>
+            <label>
+              Name:
+              <input type="" name="name" id="name" onChange={(e) => setName(e.target.value)} value={name} /></label>
+            <label>Email:
+              <input className="Contact-input" type="email" name="email" placeholder='name@email.com' onChange={(e) => setEmail(e.target.value)} value={email} />
 
-          </label>
-          <label>
-            Phone:
-            <input className="Contact-input" type="telephone" name="phone" placeholder='XXX-XXX-XXXX' onChange={(e) => setPhone(e.target.value)} value={phone} />
-          </label>
-          <label>
-            Pronouns:
-            <input className="Contact-input" type="" name="pronouns" placeholder='she/he/them' onChange={(e) => setPronouns(e.target.value)} value={pronouns} />
-          </label>
-          <label>
-            Tell us a little about what you are looking for:
-            <textarea className="Contact-textarea" name="message" rows="4" onChange={(e) => setMessage(e.target.value)} value={message} />
-          </label>
+            </label>
+            <label>
+              Phone:
+              <input className="Contact-input" type="telephone" name="phone" placeholder='XXX-XXX-XXXX' onChange={(e) => setPhone(e.target.value)} value={phone} />
+            </label>
+            <label>
+              Pronouns:
+              <input className="Contact-input" type="" name="pronouns" placeholder='she/he/them' onChange={(e) => setPronouns(e.target.value)} value={pronouns} />
+            </label>
+            <label>
+              Tell us a little about what you are looking for:
+              <textarea className="Contact-textarea" name="message" rows="4" onChange={(e) => setMessage(e.target.value)} value={message} />
+            </label>
 
-          <div className='Contact-submit'>
-          <input className="Contact-input" className="Contact-submit-button" type="submit" name="submit inquiry" value="Submit" />
+            <div className='Contact-submit'>
+              <input className="Contact-input" className="Contact-submit-button" type="submit" name="submit inquiry" value="Submit" />
+            </div>
           </div>
-        </div>
 
-      </form>
-      <div className="Contact-loadingContainer">
-        {loading && <img className="Contact-loading" src={loadingGif} alt="loading" />}
-        {showConfirmation && <h1>Thank you for submitting an inquiry! We will respond to you shortly!</h1>}
+        </form>
+        <div className="Contact-loadingContainer">
+          {loading && <img className="Contact-loading" src={loadingGif} alt="loading" />}
+          {showConfirmation && <h1>Thank you for submitting an inquiry! We will respond to you shortly!</h1>}
+        </div>
       </div>
+
       <Footer />
     </div>
   )

@@ -6,7 +6,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   background-color: $newerWhite;
-font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .Coaching {
@@ -36,7 +36,7 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: $newerWhite;
     padding: 0 16px 48px 16px;
     text-align: center;
-    & p, h1, h3, h4 {
+    & p, h1, h2 {
       color: $darkestBrown
     }
 
@@ -49,6 +49,11 @@ font-family: 'Roboto Condensed', sans-serif;
   &-painting {
     width: 100%;
     margin-bottom: 48px;
+  }
+
+  ul {
+    text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -68,8 +73,8 @@ font-family: 'Roboto Condensed', sans-serif;
         width: 600px;
         font-size: 1.5rem;
       }
-      & h3, h4 {
-        width: 600px
+      & h2 {
+        width: 580px
       }
     }  
 
@@ -78,7 +83,6 @@ font-family: 'Roboto Condensed', sans-serif;
     }
     &-painting {
       width: 600px;
-      // height: 100%;
     }
   }
 }

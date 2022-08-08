@@ -19,14 +19,14 @@ const Coaching = () => {
         <div className='Coaching-text'>
           <p>{data.coaching1}<strong>{data.coaching1Pt1}</strong>{data.coaching1Pt2}</p>
           <p >{data.coaching2}</p>
-          <h3>{data.listHeader}</h3>
+          <h2>{data.listHeader}</h2>
           <ul>
             <li>{data.list1}</li>
             <li>{data.list2}</li>
             <li>{data.list3}</li>
             <li>{data.list4}</li>
           </ul>
-          <h4>{data.listFooter}</h4>
+          <h2>{data.listFooter}</h2>
         </div>
       </div>
       <Footer />

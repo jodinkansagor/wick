@@ -1,27 +1,40 @@
 import React from 'react'
 import Typography from '@mui/material/Typography';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 import "./style.scss"
 
 const Menu = ({ dark, title }) => {
+
+  const activeStyle = {
+    textDecoration: "underline",
+    textDecorationColor: '#9A4D3A'
+  };
+
   return (
     <div className="Menu">
       <div className="Menu-menuItems">
-      <Link to="/">
-          <Typography color={dark ? "primary" : "secondary"}>Home</Typography></Link>
+        <NavLink to="/"
+        >
+          <Typography color={dark ? "primary" : "secondary"}>Home</Typography></NavLink>
         <Typography color={dark ? "primary" : "secondary"}>|</Typography>
-        <Link to="/about">
-          <Typography color={dark ? "primary" : "secondary"}>About</Typography></Link>
+        <NavLink to="/about" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
+          <Typography color={dark ? "primary" : "secondary"}>About</Typography></NavLink>
         <Typography color={dark ? "primary" : "secondary"}>|</Typography>
-        <Link to="/Coaching">
+        <NavLink to="/Coaching" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           <Typography color={dark ? "primary" : "secondary"}>Coaching</Typography>
-        </Link>
+        </NavLink>
         <Typography color={dark ? "primary" : "secondary"}>|</Typography>
-        <Link to="/contact">
+        <NavLink to="/contact" style={({ isActive }) =>
+          isActive ? activeStyle : undefined
+        }>
           <Typography color={dark ? "primary" : "secondary"}>Contact</Typography>
-        </Link>
+        </NavLink>
       </div>
       <Typography variant="h4" color={dark ? "primary" : "secondary"} className="Menu-header">{title}</Typography>
     </div>
