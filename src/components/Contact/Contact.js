@@ -41,11 +41,14 @@ const Contact = () => {
 
   return (
     <div className="Contact">
-      <div>
-        <Menu dark title="Contact Wick" />
-        <MobileDrawer dark />
+      <Menu dark title="Contact Wick" />
+      <MobileDrawer dark />
+      <div className="Contact-formText">
+        <h1> Contact Wick!</h1>
+        <h3>If you have any questions, comments, or inquiries, please contact us via this form. Wick will get back to you as soon as they are able.</h3>
+      </div>
+      <div className="Contact-formContainer">
         <form method="post" ref={formRef} onSubmit={handleSubmit} name="google-sheet" className="Contact-form">
-          <h1 className="Contact-header">Contact Wick</h1>
           <div>
             <label>
               Name:
@@ -73,12 +76,11 @@ const Contact = () => {
           </div>
 
         </form>
-        <div className="Contact-loadingContainer">
-          {loading && <img className="Contact-loading" src={loadingGif} alt="loading" />}
-          {showConfirmation && <h1>Thank you for submitting an inquiry! We will respond to you shortly!</h1>}
-        </div>
       </div>
-
+      <div className="Contact-loadingContainer">
+        {loading && <img className="Contact-loading" src={loadingGif} alt="loading" />}
+        {showConfirmation && <h1>Thank you for submitting an inquiry! We will respond to you shortly!</h1>}
+      </div>
       <Footer />
     </div>
   )
