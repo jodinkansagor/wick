@@ -8,6 +8,7 @@ export const data = {
   coaching1Pt1: "Sex and Sexuality, Gender Identity, Ethical Non-Monogamy, Relationship Restructuring, Intimacy and Security, Aging, Ability and Chronic Illness",
   coaching1Pt2: ". As a disabled person, I am uniquely poised to help clients who are adjusting to new disabilities, getting back to work after dealing with a disability or health challenges, or navigating intimate relationships (including the relationship with one’s own self) while newly disabled.",
   coaching2: "I believe that acceptance and growth go together — once we accept how things are, we are better poised to decide how we wish to grow from there. In today’s world, it can be tempting to forge forward without first accepting what is already present. As a coach, I am a dedicated listener who can guide and nurture you in cultivating a healthy balance between acceptance and growth.",
+  rates1: "",
   listHeader:
     "During a complimentary introductory session, I will spend about an hour with prospective clients over Zoom. This session will cover:",
   list1: "Specific issues you might wish to address",
